@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorBackground"
-        android:orientation="vertical"
-        android:padding="@dimen/gap_large">
+        android:layout_height="wrap_content">
 
-        <TextView
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="-50dp"
+            android:id="@+id/rvAndroid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description_title"
-            android:textSize="@dimen/text_title"
-            android:textStyle="bold" />
+            tools:listitem="@layout/item_android" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/gap_small"
-            android:text="@string/description" />
+    </GridLayout>
 
-    </LinearLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvAndroid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_android" />
 
 </LinearLayout>

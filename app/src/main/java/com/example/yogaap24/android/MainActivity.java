@@ -3,6 +3,7 @@ package com.example.yogaap24.android;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupList() {
         AndroidAdapter adapter = new AndroidAdapter(list);
-        rvAndroid.setLayoutManager(new LinearLayoutManager(this));
+        rvAndroid.setLayoutManager(new GridLayoutManager(this,2));
         rvAndroid.addItemDecoration(decoration);
         rvAndroid.setAdapter(adapter);
     }
