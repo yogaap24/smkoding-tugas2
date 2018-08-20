@@ -2,5 +2,5 @@
 <resources>
     <dimen name="gap_small">8dp</dimen>
     <dimen name="gap_large">16dp</dimen>
-    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_title">18dp</dimen>
 </resources>
